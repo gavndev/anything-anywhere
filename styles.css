@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 239, 219);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(16, 79, 47, 0.9);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 239, 219);
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.hero-title{
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 0.3em;
+    padding: 0 1em;
+    color: rgb(16, 79, 47);
+}
+
+.hero-subtext{
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    color: rgb(16, 79, 47);
+}
+
+.search-bar {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    transition: all 0.3s;
+}
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+
+.search-bar input:focus{
+    transform: scale(1.05);
+    outline: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(16, 79, 47, 0.9);
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgba(16, 79, 47, 0.9);
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+
+.footer-content img {
+    color: white;
+}
+.footer-content p, .footer-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.github-logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
