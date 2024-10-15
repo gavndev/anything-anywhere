@@ -130,6 +130,21 @@ footer {
 
 .footer-content img {
     color: white;
+    width: 12px;
+    margin-right: 4px;
+    margin-top: 3px;
+}
+
+.footer-content li span{
+    color: rgb(245, 235, 207);
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+
+.linkedin-logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    scale: 1.5;
 }
 .footer-content p, .footer-content ul {
     margin: 0;
