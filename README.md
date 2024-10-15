@@ -1,5 +1,7 @@
 # Anything Anywhere
 
+![Photo of Anything, Anywhere's homepage/hero section](./assets/images/hero-image--markdown.png)
+
 ## Overview
 Anything Anywhere is a web application designed to help users discover popular media and destinations from anywhere in the world. Unlike standard map applications that focus solely on places and reviews, Anything Anywhere expands the experience by including popular songs, artwork, and other forms of media.
 
@@ -28,4 +30,4 @@ Stay tuned for more updates as I continue to develop and enhance Anything Anywhe
 
 ### Credits
 - Lead Design and Programming: [Gavin Griggs](https://www.linkedin.com/in/gavin-griggs-frmthe44/)
-- Co-Designer and Art Lead [Jovan Banks](https://www.linkedin.com/in/jovan-banks-2a4498236/)
+- Co-Designer and Art Lead: [Jovan Banks](https://www.linkedin.com/in/jovan-banks-2a4498236/)
