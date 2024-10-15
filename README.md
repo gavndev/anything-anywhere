@@ -1,4 +1,4 @@
-# Anything Anywhere
+# Anything, Anywhere.
 
 ![Photo of Anything, Anywhere's homepage/hero section](./assets/images/hero-image--markdown.png)
 
