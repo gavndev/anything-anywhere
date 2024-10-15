@@ -150,10 +150,46 @@ footer {
     padding: 0;
     list-style: none;
 }
+.footer-attribution{
+    text-align: center;
+    margin-top: 20px;
+}
 
 .github-logo {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
+
+.attribution-heart{
+    color: red;
+    animation: pulseHeart 2s infinite;
+    display: inline-block;
+}
+
+.footer-attribution{
+    text-align: center;
+    padding: 15px;
+    margin-top: -5px;
+    background-color: rgb(14, 63, 34);
+}
+
+.footer-attribution p{
+    color: white;
+    font-size: 0.7em;
+}
+
+/* Animation */
+@keyframes pulseHeart {
+    0%, 100% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* Media Queries */
 
 @media (max-width: 768px) {
     nav ul {
