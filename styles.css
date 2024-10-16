@@ -89,8 +89,7 @@ nav ul li a:hover {
     width: 100%;
     padding: 15px;
     border-radius: 25px;
-    border: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
     font-size: 1.2em;
     transition: all 0.3s;
 }
