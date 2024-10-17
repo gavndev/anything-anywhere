@@ -83,15 +83,17 @@ nav ul li a:hover {
 .search-bar {
     margin-top: 20px;
     width: 50%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .search-bar input {
     width: 100%;
     padding: 15px;
-    border-radius: 25px;
-    border: 1px solid #ccc;
     font-size: 1.2em;
     transition: all 0.3s;
+    border-radius: 25px;
+    border-width: 1px;
+    border: 1px solid rgb(209 213 219);
 }
 
 .search-bar input::placeholder {
