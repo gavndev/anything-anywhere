@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: rgba(45, 120, 242, 0.9);
+    --secondary-color: rgba(12, 82, 195, 0.9);
+    --tertiary-color: rgba(0, 0, 0, 0.9);
+    --quaternary-color: rgba(255, 255, 255, 0.9);
+}
+
 body, html {
     width: 100%;
     height: 100%;
@@ -25,12 +32,24 @@ nav {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(45, 120, 242, 0.9);
+    background-color: var(--primary-color);
     padding: 10px 20px;
     border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
+}
+
+.log-in_sign-up{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(2px);
 }
 
 nav ul {
@@ -51,7 +70,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(255, 239, 219);
+    color: rgba(8, 43, 101, 0.9);
 }
 .hero {
     display: flex;
@@ -86,7 +105,7 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-.hero-title:hover, .hero-subtext:hover{
+.hero-subtext:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
@@ -106,7 +125,7 @@ nav ul li a:hover {
     transition: all 0.3s;
     border-radius: 15px;
     border-width: 1px;
-    border: 1px solid rgb(209 213 219);
+    border: 1px solid rgb(91, 151, 241);
 }
 
 .search-bar input::placeholder {
@@ -120,7 +139,7 @@ nav ul li a:hover {
 }
 
 .search-bar input:hover{
-    animation: infinite;
+    background-color: rgba(109, 157, 234, 0.774);
 }
 
 footer {
