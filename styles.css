@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 :root{
@@ -17,6 +16,7 @@ body, html {
     height: 100%;
     font-family: 'Inter', Arial, sans-serif;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 a{
@@ -33,18 +33,6 @@ nav {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 25px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    backdrop-filter: blur(2px);
-}
-
-.log-in_sign-up{
-    position: fixed;
-    top: 20px;
-    right: 20px;
     background-color: var(--primary-color);
     padding: 10px 20px;
     border-radius: 25px;
@@ -73,6 +61,53 @@ nav ul li a {
 nav ul li a:hover {
     color: rgba(8, 43, 101, 0.9);
 }
+
+
+.login-signup--container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 22.5px;
+    right: 20px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    scale: 1.1;
+}
+
+.login-signup--button{
+    display: flex;
+    justify-content: center;
+}
+
+.login-signup--button span {
+    padding: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.login-signup--container:hover {
+    width: 160px;
+    opacity: 1;
+}
+
+.login-signup--container:hover .login-signup--button span {
+    opacity: 1;
+}
+.login-signup--container:hover .login-signup--button svg {
+    margin-right: 5px;
+    animation: shake 8s infinite;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -81,7 +116,6 @@ nav ul li a:hover {
     height: 100vh;
     text-align: center;
 }
-
 
 .hero-title{
     font-size: 4em;
@@ -111,8 +145,6 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-
-
 .search-bar {
     margin-top: 20px;
     width: 50%;
@@ -132,7 +164,6 @@ nav ul li a:hover {
 .search-bar input::placeholder {
     color: #ccc;
 }
-
 
 .search-bar input:focus{
     transform: scale(1.05);
@@ -178,16 +209,17 @@ footer {
     padding-right: 5px;
 }
 
-
 .linkedin-logo {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
     scale: 1.5;
 }
+
 .footer-content p, .footer-content ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .footer-attribution{
     text-align: center;
     margin-top: 20px;
@@ -242,10 +274,27 @@ footer {
     
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes levitation{
     0%{
         transform: translateY(0px) rotate(0deg);
-
     }
 
     25%{
@@ -262,10 +311,8 @@ footer {
 
     100%{
         transform: translateY(0px) rotate(0deg);
-
     }
 }
-
 
 /* Media Queries */
 
