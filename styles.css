@@ -6,6 +6,7 @@
 
 :root{
     --primary-color: rgba(45, 120, 242, 0.9);
+    --primary-colorAlt: rgba(104, 185, 243, 0.9);
     --secondary-color: rgba(12, 82, 195, 0.9);
     --tertiary-color: rgba(0, 0, 0, 0.9);
     --quaternary-color: rgba(255, 255, 255, 0.9);
@@ -158,20 +159,16 @@ nav ul li a:hover {
     transition: all 0.3s;
     border-radius: 15px;
     border-width: 1px;
-    border: 1px solid rgb(91, 151, 241);
+    border: 1px solid var(--primary-colorAlt);
 }
 
 .search-bar input::placeholder {
-    color: #ccc;
+    color: var(--primary-colorAlt)
 }
 
 .search-bar input:focus{
     transform: scale(1.05);
     outline: none;
-}
-
-.search-bar input:hover{
-    background-color: rgba(109, 157, 234, 0.774);
 }
 
 footer {
